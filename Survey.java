@@ -47,11 +47,7 @@ public class Entry extends Application {
 		RadioButton rb4 = new RadioButton("green");
 		rb4.setToggleGroup(tg);
 		
-		root.getChildren().add(l1);
-		root.getChildren().add(rb1);
-		root.getChildren().add(rb2);
-		root.getChildren().add(rb3);
-		root.getChildren().add(rb4);
+		root.getChildren().addAll(l1, rb1, rb2, rb3, rb4);
 		root.getStylesheets().add("style.css");
 		
 		Spinner<Integer> ageSpinner = new Spinner<Integer>();
